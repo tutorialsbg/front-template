@@ -7,3 +7,6 @@
   - добавяне на нови страници
   - добавяне на полезни линкове 
   - разширяване на шаблона 
+
+
+![alt HTML/CSS template](http://3web.bg/sub/tutorialsbg/img-1.png)
