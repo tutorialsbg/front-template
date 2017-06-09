@@ -13,13 +13,13 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <header id="header">
+        <header id="header" class="index-page">
             <div class="container">
                 <div class="header-placeholder">
                     <nav class="navbar">
                         <div class="nav-menu">
                             <div class="navbar-header">
-                                <a class="logo" href="#">
+                                <a class="logo" href="index.html">
                                     <img src="images/logo.svg">
                                 </a>
                                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -31,9 +31,21 @@
                             </div>
                             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                 <ul class="nav navbar-nav navbar-right">
-                                    <li><a href="#"><i class="fa fa-th-large"></i>Components</a></li>
-                                    <li><a href="#"><i class="fa fa-list"></i>Sections</a></li>
-                                    <li><a href="#"><i class="fa fa-send"></i>Examples</a></li>
+                                    <li><a class="menu-element" href="elements.html"><i class="fa fa-th-large"></i>UI елементи</a></li>
+                                    <li>
+                                        <div class="dropdown">
+                                            <a href="#" class="dropdown-toggle menu-element" data-toggle="dropdown">
+                                            <i class="fa fa-send"></i>Примери
+                                            <span class="caret"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="index.html">Начало</a></li>
+                                                <li><a href="blog.html">Блог</a></li>
+                                                <li><a href="blog-detail.html">Постове</a></li>
+                                                <li><a href="login.html">Вход</a></li>
+                                                <li><a href="registration.html">Регистрация</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -45,9 +57,14 @@
             <section id="sticky" class="contact-banner">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 contact-form">
-                            <h2>Send us your message</h2>
-                            <div class="col-sm-6 form-col">
+                        <div class="col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1 contact-form">
+                            <div class="contact-form-heading">
+                            <h2>Contact us</h2>
+                            <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                            <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                            <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
+                            </div>
+                            <div class="col-sm-10 col-sm-offset-1 form-col">
                                 <label>
                                     <input type="text" name="your-name"  placeholder="Username">
                                 </label>
@@ -62,31 +79,6 @@
                                 </label>
                                 <input type="submit" value="Send">
                             </div>
-                            <div class="col-sm-6 text-form-col">
-                                <ul>
-                                    <li>
-                                        <img src="images/left-widget.svg">
-                                        <div class="form-content">
-                                        <h4>Find us at office</h4>
-                                        <p>Lorem Ipsum <br> dummy text of the <br> typesetting industry</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <img src="images/center-widget.svg">
-                                        <div class="form-content">
-                                        <h4>Give us a ring</h4>
-                                        <p>Lorem Ipsum <br> dummy text of the <br> typesetting industry</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <img src="images/right-widget.svg">
-                                        <div class="form-content">
-                                        <h4>Information</h4>
-                                        <p>Lorem Ipsum <br> dummy text of the <br> typesetting industry</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -96,15 +88,17 @@
             <div class="container">
                 <div class="footer-placeholder">
                     <div class="footer-logo-box">
-                        <a href="#">
+                        <a href="index.html">
                             <img src="images/footer-logo.svg">
                         </a>
                     </div>
                     <ul class="footer-menu">
-                        <li><a href="#">blog</a></li>
-                        <li><a href="#">presentation</a></li>
-                        <li><a href="#">contact us</a></li>
-                        <li><a href="#">dicover</a></li>
+                        <li class="social"><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
+                        <li class="social"><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+                        <li class="social"><a href="#"><i class="fa  fa-linkedin fa-lg"></i></a></li>
+                        <li class="social"><a href="#"><i class="fa fa-google-plus fa-lg"></i></a></li>
+                        <li class="line"></li>
+                        <li class="footer-text"><a target="_blank" href="https://tutorials.bg/">Tutorials.bg 2017</a></li>
                     </ul>
                 </div>
             </div>

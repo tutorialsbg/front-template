@@ -6,7 +6,6 @@
      - $('#header').height() 
      - $('#footer').height()
      + $('#bs-example-navbar-collapse-1').height()
-
    ));
  }
 
